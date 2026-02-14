@@ -240,7 +240,7 @@ def yolo_compare_red_to_green(before_boxes, after_boxes):
             # 3. Similar content words
             
             position_match = (red_position == green_position or
-                            self._adjacent_position(red_position, green_position))
+                            _adjacent_position(red_position, green_position))
             
             keyword_match = (red_keyword in green_content or
                            any(word in green_content for word in red_content.split()[:5]))
