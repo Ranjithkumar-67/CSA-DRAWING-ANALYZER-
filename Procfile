@@ -1,1 +1,1 @@
-web: python app_working_simple.py
+web: python app_yolo_complete.py
