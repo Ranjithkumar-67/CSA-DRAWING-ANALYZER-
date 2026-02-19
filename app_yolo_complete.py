@@ -2074,7 +2074,7 @@ def index():
                     <div style="background: rgba(255,0,110,0.1); padding: 25px; border-radius: 15px; border-left: 4px solid #ff006e;">
                         <h4 style="color: #ff006e; margin-bottom: 15px; font-size: 18px;">🔴 Red Marked Areas Detected</h4>
                         <p style="font-size: 16px; line-height: 1.8;">
-                            Found <strong>${analysis.red_markups_list.length}</strong> area(s) marked by engineer requiring attention.
+                            Found <strong>${{analysis.red_markups_list.length}}</strong> area(s) marked by engineer requiring attention.
                         </p>
                         <p style="margin-top: 10px; opacity: 0.9;">
                             Keywords detected: ${[...new Set(analysis.red_markups_list.map(r => r.keyword))].join(', ')}
